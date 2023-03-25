@@ -1,0 +1,903 @@
+# baseURI: http://example.org/Brunch&More
+
+@prefix : <http://example.org/Brunch&More#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/Brunch&More>
+  rdf:type owl:Ontology ;
+  spin:imports <http://topbraid.org/spin/rdfsplus> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+:Baguette
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Food ;
+.
+:Baguette_1
+  rdf:type :Baguette ;
+  :allergenicΙngredients "true"^^xsd:boolean ;
+  :baguetteExpiryDate "2022-12-15"^^xsd:date ;
+  :costOfFood 4.30 ;
+  :eggs "false"^^xsd:boolean ;
+  :fatPerFood "51"^^xsd:decimal ;
+  :gluten "true"^^xsd:boolean ;
+  :grams 500 ;
+  :milk "false"^^xsd:boolean ;
+  :nutritionΙngredients "true"^^xsd:boolean ;
+  :nuts "false"^^xsd:boolean ;
+  :proteinPerFood 8.2 ;
+  :storedAt :Fridge_1 ;
+.
+:Baguette_2
+  rdf:type :Baguette ;
+  :costOfFood 4.3 ;
+  :grams 550 ;
+  :proteinPerFood 7.5 ;
+  :storedAt :Fridge_1 ;
+.
+:Baguette_3
+  rdf:type :Baguette ;
+  :costOfFood "6"^^xsd:decimal ;
+  :grams 560 ;
+  :proteinPerFood 7.2 ;
+  :storedAt :Fridge_1 ;
+.
+:Barista
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Staff ;
+.
+:Barista_1
+  rdf:type :Barista ;
+  :hoursWorkedThisWeek 25 ;
+  :isCertified "true"^^xsd:boolean ;
+  :making :ColdCoffe_1 ;
+  :making :ColdTea_2 ;
+  :making :NaturalJuice_3 ;
+  :moneyPerHour 4.5 ;
+  :nameOfStaff "Nikos Galanis" ;
+  :phoneNumberOfStaff 65956965 ;
+  :working :Store_1 ;
+.
+:Barista_2
+  rdf:type :Barista ;
+  :hoursWorkedThisWeek 33 ;
+  :isCertified "false"^^xsd:boolean ;
+  :making :HotCoffee_1 ;
+  :making :NaturalJuice_1 ;
+  :making :PackagedJuice_2 ;
+  :moneyPerHour "6"^^xsd:decimal ;
+  :nameOfStaff "Maria Magdalini" ;
+  :phoneNumberOfStaff 55654566 ;
+  :working :Store_1 ;
+.
+:Barista_3
+  rdf:type :Barista ;
+  :hoursWorkedThisWeek 35 ;
+  :isCertified "true"^^xsd:boolean ;
+  :making :ColdCoffee_3 ;
+  :making :ColdTea_1 ;
+  :making :HotCoffee_3 ;
+  :making :HotTea_1 ;
+  :making :PackagedJuice_1 ;
+  :moneyPerHour "5"^^xsd:decimal ;
+  :nameOfStaff "NIkos Nikou" ;
+  :phoneNumberOfStaff 5488484 ;
+  :working :Store_1 ;
+.
+:Barista_4
+  rdf:type :Barista ;
+  :hoursWorkedThisWeek 20 ;
+  :isCertified "true"^^xsd:boolean ;
+  :making :ColdCoffe_2 ;
+  :making :HotCoffee_2 ;
+  :making :HotTea_2 ;
+  :making :NaturalJuice_2 ;
+  :moneyPerHour "5"^^xsd:decimal ;
+  :nameOfStaff "Fotis Fotiou" ;
+  :phoneNumberOfStaff 5454546 ;
+  :working :Store_1 ;
+.
+:Burger
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Food ;
+.
+:Burger_1
+  rdf:type :Burger ;
+  :costOfFood 6.20 ;
+  :grams 400 ;
+  :proteinPerFood 9.3 ;
+  :storedAt :Fridge_2 ;
+.
+:Burger_2
+  rdf:type :Burger ;
+  :costOfFood 6.5 ;
+  :grams 500 ;
+  :proteinPerFood 8.8 ;
+  :storedAt :Fridge_1 ;
+.
+:Burger_3
+  rdf:type :Burger ;
+  :costOfFood "9"^^xsd:decimal ;
+  :grams 600 ;
+  :proteinPerFood 7.9 ;
+  :storedAt :Fridge_1 ;
+.
+:Cake
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Food ;
+.
+:Cake_1
+  rdf:type :Cake ;
+  :costOfFood 5.2 ;
+  :grams 350 ;
+  :proteinPerFood 4.1 ;
+  :storedAt :Fridge_2 ;
+.
+:Cake_2
+  rdf:type :Cake ;
+  :costOfFood 3.8 ;
+  :grams 390 ;
+  :proteinPerFood 5.6 ;
+  :storedAt :Fridge_2 ;
+.
+:Cake_3
+  rdf:type :Cake ;
+  :costOfFood "5"^^xsd:decimal ;
+  :grams 420 ;
+  :proteinPerFood "8"^^xsd:decimal ;
+  :storedAt :Fridge_2 ;
+.
+:Cashier
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Staff ;
+.
+:Cashier_1
+  rdf:type :Cashier ;
+  :gettingPaid :Customer_2 ;
+  :gettingPaid :Customer_4 ;
+  :gettingPaid :Customer_6 ;
+  :hoursWorkedThisWeek 45 ;
+  :isCertified "false"^^xsd:boolean ;
+  :moneyPerHour "5"^^xsd:decimal ;
+  :nameOfStaff "Giwrgos Katsouranis" ;
+  :passesPointsTo :CustomerCard_2 ;
+  :passesPointsTo :CustomerCard_3 ;
+  :passesPointsTo :CustomerCard_4 ;
+  :working :Store_1 ;
+.
+:Cashier_2
+  rdf:type :Cashier ;
+  :gettingPaid :Customer_1 ;
+  :gettingPaid :Customer_3 ;
+  :gettingPaid :Customer_5 ;
+  :hoursWorkedThisWeek 30 ;
+  :isCertified "true"^^xsd:boolean ;
+  :moneyPerHour "4"^^xsd:decimal ;
+  :nameOfStaff "Georgia Georgiou" ;
+  :passesPointsTo :CustomerCard_1 ;
+  :passesPointsTo :CustomerCard_5 ;
+  :passesPointsTo :CustomerCard_6 ;
+  :phoneNumberOfStaff 5461513 ;
+  :working :Store_1 ;
+.
+:Cleaner
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Staff ;
+.
+:Cleaner_1
+  rdf:type :Cleaner ;
+  :cleaning :Store_1 ;
+  :hoursWorkedThisWeek 40 ;
+  :isCertified "true"^^xsd:boolean ;
+  :nameOfStaff "Dimitris Koutsoulis" ;
+  :phoneNumberOfStaff 5416156 ;
+  :working :Store_1 ;
+.
+:Cleaner_2
+  rdf:type :Cleaner ;
+  :cleaning :Store_1 ;
+  :hoursWorkedThisWeek 35 ;
+  :isCertified "true"^^xsd:boolean ;
+  :moneyPerHour "6"^^xsd:decimal ;
+  :nameOfStaff "Ioanna Ioannou" ;
+  :phoneNumberOfStaff 6456544 ;
+  :working :Store_1 ;
+.
+:Coffee
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Drinks ;
+.
+:ColdCoffe_1
+  rdf:type :ColdCoffee ;
+  :coffeHasSugar "true"^^xsd:boolean ;
+  :costOfDrinks 4.20 ;
+  :milliliters 200 ;
+  :nameOfDrinks "FredoCapucino" ;
+.
+:ColdCoffe_2
+  rdf:type :ColdCoffee ;
+  :coffeHasSugar "false"^^xsd:boolean ;
+  :costOfDrinks 4.00 ;
+  :milliliters 200 ;
+  :nameOfDrinks "FredoEspresso" ;
+.
+:ColdCoffee
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Coffee ;
+.
+:ColdCoffee_3
+  rdf:type :ColdCoffee ;
+  :coffeHasSugar "true"^^xsd:boolean ;
+  :costOfDrinks "3"^^xsd:decimal ;
+  :milliliters 300 ;
+  :nameOfDrinks "Frappe" ;
+.
+:ColdTea
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Tea ;
+.
+:ColdTea_1
+  rdf:type :ColdTea ;
+  :costOfDrinks 3.6 ;
+  :milliliters 320 ;
+  :nameOfDrinks "Lemon" ;
+.
+:ColdTea_2
+  rdf:type :ColdTea ;
+  :costOfDrinks "5"^^xsd:decimal ;
+  :milliliters 280 ;
+  :nameOfDrinks "Peach" ;
+.
+:Cook
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Staff ;
+.
+:Cook_1
+  rdf:type :Cook ;
+  :cooking :Baguette_1 ;
+  :cooking :Burger_1 ;
+  :cooking :Cake_1 ;
+  :cooking :Omelette_1 ;
+  :hoursWorkedThisWeek 42 ;
+  :isCertified "true"^^xsd:boolean ;
+  :moneyPerHour "7"^^xsd:decimal ;
+  :nameOfStaff "Giannis Giannou" ;
+  :phoneNumberOfStaff 548168118 ;
+  :working :Store_1 ;
+.
+:Cook_2
+  rdf:type :Cook ;
+  :cooking :Baguette_3 ;
+  :cooking :Burger_2 ;
+  :cooking :Burger_3 ;
+  :cooking :Cake_1 ;
+  :cooking :Cake_3 ;
+  :cooking :Omelette_3 ;
+  :cooking :ProteinYogurt_2 ;
+  :cooking :ProteinYogurt_3 ;
+  :cooking :PuffPastry_1 ;
+  :cooking :SavoryPancake_2 ;
+  :cooking :SavoryPancake_3 ;
+  :cooking :SweetPancake_3 ;
+  :hoursWorkedThisWeek 50 ;
+  :isCertified "true"^^xsd:boolean ;
+  :moneyPerHour 6.5 ;
+  :nameOfStaff "Antreas Gioulis" ;
+  :phoneNumberOfStaff 65451681 ;
+  :working :Store_1 ;
+.
+:Cupboard
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :PlaceOfStoring ;
+.
+:Customer
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+:CustomerCard
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+:CustomerCard_1
+  rdf:type :CustomerCard ;
+  :pointsOfCard "235"^^xsd:decimal ;
+.
+:CustomerCard_2
+  rdf:type :CustomerCard ;
+  :pointsOfCard 125 ;
+.
+:CustomerCard_3
+  rdf:type :CustomerCard ;
+  :pointsOfCard 146 ;
+.
+:CustomerCard_4
+  rdf:type :CustomerCard ;
+  :pointsOfCard 357 ;
+.
+:CustomerCard_5
+  rdf:type :CustomerCard ;
+  :pointsOfCard 670 ;
+.
+:CustomerCard_6
+  rdf:type :CustomerCard ;
+  :pointsOfCard 65 ;
+.
+:Customer_1
+  rdf:type :Customer ;
+  :customerUsesCard :CustomerCard_1 ;
+  :dailyCustomer "true"^^xsd:boolean ;
+.
+:Customer_2
+  rdf:type :Customer ;
+  :customerUsesCard :CustomerCard_2 ;
+  :dailyCustomer "false"^^xsd:boolean ;
+.
+:Customer_3
+  rdf:type :Customer ;
+  :customerUsesCard :CustomerCard_3 ;
+  :dailyCustomer "true"^^xsd:boolean ;
+.
+:Customer_4
+  rdf:type :Customer ;
+  :customerUsesCard :CustomerCard_4 ;
+  :dailyCustomer "false"^^xsd:boolean ;
+.
+:Customer_5
+  rdf:type :Customer ;
+  :customerUsesCard :CustomerCard_5 ;
+  :dailyCustomer "true"^^xsd:boolean ;
+.
+:Customer_6
+  rdf:type :Customer ;
+  :customerUsesCard :CustomerCard_6 ;
+  :dailyCustomer "true"^^xsd:boolean ;
+.
+:Drinks
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+:Food
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+:Fridge
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :PlaceOfStoring ;
+.
+:Fridge_1
+  rdf:type :Fridge ;
+.
+:Fridge_2
+  rdf:type :Fridge ;
+.
+:HotCoffee
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Coffee ;
+.
+:HotCoffee_1
+  rdf:type :HotCoffee ;
+  :coffeHasSugar "false"^^xsd:boolean ;
+  :costOfDrinks 4.5 ;
+  :milliliters 300 ;
+  :nameOfDrinks "Capucino" ;
+.
+:HotCoffee_2
+  rdf:type :HotCoffee ;
+  :coffeHasSugar "true"^^xsd:boolean ;
+  :costOfDrinks 3.60 ;
+  :milliliters 300 ;
+  :nameOfDrinks "Espresso" ;
+.
+:HotCoffee_3
+  rdf:type :HotCoffee ;
+  :coffeHasSugar "false"^^xsd:boolean ;
+  :costOfDrinks "4"^^xsd:decimal ;
+  :milliliters 400 ;
+  :nameOfDrinks "FilterCoffee" ;
+.
+:HotTea
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Tea ;
+.
+:HotTea_1
+  rdf:type :HotTea ;
+  :costOfDrinks 2.5 ;
+  :milliliters 200 ;
+  :nameOfDrinks "Black" ;
+.
+:HotTea_2
+  rdf:type :HotTea ;
+  :costOfDrinks 2.30 ;
+  :milliliters 250 ;
+  :nameOfDrinks "Indian" ;
+.
+:Juices
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Drinks ;
+.
+:NaturalJuice
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Juices ;
+.
+:NaturalJuice_1
+  rdf:type :NaturalJuice ;
+  :costOfDrinks 4.20 ;
+  :milliliters 500 ;
+  :nameOfDrinks "Orange" ;
+.
+:NaturalJuice_2
+  rdf:type :NaturalJuice ;
+  :costOfDrinks 4.00 ;
+  :milliliters 350 ;
+  :nameOfDrinks "Strawberry" ;
+.
+:NaturalJuice_3
+  rdf:type :NaturalJuice ;
+  :costOfDrinks 5.5 ;
+  :milliliters 350 ;
+  :nameOfDrinks "Pineapple" ;
+.
+:Omelette
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Food ;
+.
+:Omelette_1
+  rdf:type :Omelette ;
+  :costOfFood 6.3 ;
+  :grams 360 ;
+  :proteinPerFood 12.5 ;
+  :storedAt :Fridge_1 ;
+.
+:Omelette_2
+  rdf:type :Omelette ;
+  :costOfFood 6.8 ;
+  :grams 350 ;
+  :proteinPerFood 7.8 ;
+  :storedAt :Fridge_1 ;
+.
+:Omelette_3
+  rdf:type :Omelette ;
+  :costOfFood "6"^^xsd:decimal ;
+  :grams 480 ;
+  :proteinPerFood 15.3 ;
+  :storedAt :Fridge_2 ;
+.
+:PackagedJuice
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Juices ;
+.
+:PackagedJuice_1
+  rdf:type :PackagedJuice ;
+  :costOfDrinks 5.1 ;
+  :milliliters 400 ;
+  :nameOfDrinks "Carrot" ;
+.
+:PackagedJuice_2
+  rdf:type :PackagedJuice ;
+  :costOfDrinks 3.10 ;
+  :milliliters 400 ;
+  :nameOfDrinks "Orange" ;
+.
+:Pancake
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Food ;
+.
+:PlaceOfStoring
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+:ProteinBar
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Food ;
+.
+:ProteinBar_1
+  rdf:type :ProteinBar ;
+  :costOfFood 5.2 ;
+  :grams 150 ;
+  :proteinPerFood 12.5 ;
+  :storedAt :Fridge_1 ;
+.
+:ProteinBar_2
+  rdf:type :ProteinBar ;
+  :costOfFood 4.5 ;
+  :grams 150 ;
+  :proteinPerFood 15.2 ;
+  :storedAt :Fridge_2 ;
+.
+:ProteinYogurt
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Food ;
+.
+:ProteinYogurt_1
+  rdf:type :ProteinYogurt ;
+  :costOfFood 2.80 ;
+  :grams 280 ;
+  :proteinPerFood 12.3 ;
+  :storedAt :Fridge_1 ;
+  :yoghurtExpiryDate "2022-12-10"^^xsd:date ;
+.
+:ProteinYogurt_2
+  rdf:type :ProteinYogurt ;
+  :costOfFood 3.9 ;
+  :grams 240 ;
+  :proteinPerFood 12.8 ;
+  :storedAt :Fridge_1 ;
+  :yoghurtExpiryDate "2022-12-11"^^xsd:date ;
+.
+:ProteinYogurt_3
+  rdf:type :ProteinYogurt ;
+  :costOfFood 3.2 ;
+  :grams 150 ;
+  :proteinPerFood 13.4 ;
+  :storedAt :Fridge_1 ;
+  :yoghurtExpiryDate "2022-12-15"^^xsd:date ;
+.
+:PuffPastry
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Food ;
+.
+:PuffPastry_1
+  rdf:type :PuffPastry ;
+  :costOfFood 3.4 ;
+  :grams 330 ;
+  :proteinPerFood 2.5 ;
+.
+:PuffPastry_2
+  rdf:type :PuffPastry ;
+  :costOfFood 3.2 ;
+  :grams 360 ;
+  :proteinPerFood "3"^^xsd:decimal ;
+.
+:SavoryPancake
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Pancake ;
+.
+:SavoryPancake_1
+  rdf:type :SavoryPancake ;
+  :costOfFood 7.2 ;
+  :grams 600 ;
+  :proteinPerFood 8.6 ;
+.
+:SavoryPancake_2
+  rdf:type :SavoryPancake ;
+  :costOfFood 7.20 ;
+  :grams 500 ;
+  :proteinPerFood 12.8 ;
+.
+:SavoryPancake_3
+  rdf:type :SavoryPancake ;
+  :costOfFood "8"^^xsd:decimal ;
+  :grams 460 ;
+  :proteinPerFood 6.3 ;
+.
+:Scrambled
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Omelette ;
+.
+:Staff
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+:Store
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+:StoreManager
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Staff ;
+.
+:StoreManager_1
+  rdf:type :StoreManager ;
+  :closesStore :Store_1 ;
+  :hoursWorkedThisWeek 50 ;
+  :isCertified "true"^^xsd:boolean ;
+  :moneyPerHour "6"^^xsd:decimal ;
+  :nameOfStaff "Mixalis Zanis" ;
+  :phoneNumberOfStaff 6545681681 ;
+  :working :Store_1 ;
+.
+:StoreManager_2
+  rdf:type :StoreManager ;
+  :hoursWorkedThisWeek 30 ;
+  :isCertified "true"^^xsd:boolean ;
+  :moneyPerHour "5"^^xsd:decimal ;
+  :nameOfStaff "lll" ;
+  :opensStore :Store_1 ;
+  :phoneNumberOfStaff 51168181 ;
+  :working :Store_1 ;
+.
+:Store_1
+  rdf:type :Store ;
+.
+:SweetPancake
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Pancake ;
+.
+:SweetPancake_1
+  rdf:type :SweetPancake ;
+  :costOfFood 6.50 ;
+  :grams 350 ;
+  :proteinPerFood 12.3 ;
+.
+:SweetPancake_2
+  rdf:type :SweetPancake ;
+  :costOfFood 6.20 ;
+  :grams 560 ;
+  :proteinPerFood 9.5 ;
+.
+:SweetPancake_3
+  rdf:type :SweetPancake ;
+  :costOfFood 6.3 ;
+  :grams 560 ;
+  :proteinPerFood 8.6 ;
+.
+:Tea
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Drinks ;
+.
+:Waiter
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf :Staff ;
+.
+:Waiter_1
+  rdf:type :Waiter ;
+  :female "false"^^xsd:boolean ;
+  :hoursWorkedThisWeek 40 ;
+  :isCertified "true"^^xsd:boolean ;
+  :male "true"^^xsd:boolean ;
+  :moneyPerHour "4"^^xsd:decimal ;
+  :nameOfStaff "Tasos Ksiarxos" ;
+  :phoneNumberOfStaff 1681681 ;
+  :serving :Customer_1 ;
+  :serving :Customer_2 ;
+  :working :Store_1 ;
+.
+:Waiter_2
+  rdf:type :Waiter ;
+  :hoursWorkedThisWeek 32 ;
+  :isCertified "true"^^xsd:boolean ;
+  :moneyPerHour "5"^^xsd:decimal ;
+  :nameOfStaff "Nikos Nik" ;
+  :phoneNumberOfStaff 668161 ;
+  :serving :Customer_3 ;
+  :serving :Customer_4 ;
+  :working :Store_1 ;
+.
+:Waiter_3
+  rdf:type :Waiter ;
+  :hoursWorkedThisWeek 50 ;
+  :isCertified "true"^^xsd:boolean ;
+  :moneyPerHour "6"^^xsd:decimal ;
+  :nameOfStaff "Giouli Peti" ;
+  :phoneNumberOfStaff 654681 ;
+  :serving :Customer_5 ;
+  :serving :Customer_6 ;
+  :working :Store_1 ;
+.
+:allergenicΙngredients
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:boolean ;
+.
+:baguetteExpiryDate
+  rdf:type rdf:Property ;
+  rdfs:domain :Baguette ;
+  rdfs:range xsd:date ;
+  rdfs:subPropertyOf :expiryDate ;
+.
+:cleaning
+  rdf:type rdf:Property ;
+  rdfs:domain :Cleaner ;
+  rdfs:range :Store ;
+  rdfs:subPropertyOf :working ;
+.
+:closesStore
+  rdf:type rdf:Property ;
+  rdfs:domain :StoreManager ;
+  rdfs:range xsd:string ;
+.
+:coffeHasSugar
+  rdf:type rdf:Property ;
+  rdfs:domain :Coffee ;
+  rdfs:range xsd:boolean ;
+.
+:cooking
+  rdf:type rdf:Property ;
+  rdfs:domain :Cook ;
+  rdfs:range :Food ;
+  rdfs:subPropertyOf :working ;
+.
+:costOfDrinks
+  rdf:type rdf:Property ;
+  rdfs:domain :Drinks ;
+  rdfs:range xsd:decimal ;
+.
+:costOfFood
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:decimal ;
+.
+:customerUsesCard
+  rdf:type rdf:Property ;
+  rdfs:domain :Customer ;
+  rdfs:range :CustomerCard ;
+.
+:dailyCustomer
+  rdf:type rdf:Property ;
+  rdfs:domain :Customer ;
+  rdfs:range xsd:boolean ;
+.
+:eggs
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:boolean ;
+  rdfs:subPropertyOf :allergenicΙngredients ;
+.
+:expiryDate
+  rdf:type rdf:Property ;
+.
+:fatPerFood
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:decimal ;
+  rdfs:subPropertyOf :nutritionΙngredients ;
+.
+:female
+  rdf:type rdf:Property ;
+  rdfs:domain :Staff ;
+  rdfs:range xsd:boolean ;
+  rdfs:subPropertyOf :person ;
+.
+:gettingPaid
+  rdf:type rdf:Property ;
+  rdfs:domain :Cashier ;
+  rdfs:range :Customer ;
+  rdfs:subPropertyOf :working ;
+.
+:gluten
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:boolean ;
+  rdfs:subPropertyOf :allergenicΙngredients ;
+.
+:grams
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:integer ;
+  rdfs:subPropertyOf :weight ;
+.
+:hoursWorkedThisWeek
+  rdf:type rdf:Property ;
+  rdfs:domain :Staff ;
+  rdfs:range xsd:integer ;
+.
+:isCertified
+  rdf:type rdf:Property ;
+  rdfs:domain :Staff ;
+  rdfs:range xsd:boolean ;
+.
+:making
+  rdf:type rdf:Property ;
+  rdfs:domain :Barista ;
+  rdfs:range :Drinks ;
+  rdfs:subPropertyOf :working ;
+.
+:male
+  rdf:type rdf:Property ;
+  rdfs:domain :Staff ;
+  rdfs:range xsd:boolean ;
+  rdfs:subPropertyOf :person ;
+.
+:milk
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:boolean ;
+  rdfs:subPropertyOf :allergenicΙngredients ;
+.
+:milliliters
+  rdf:type rdf:Property ;
+  rdfs:domain :Drinks ;
+  rdfs:range xsd:integer ;
+  rdfs:subPropertyOf :weight ;
+.
+:moneyPerHour
+  rdf:type rdf:Property ;
+  rdfs:domain :Staff ;
+  rdfs:range xsd:decimal ;
+.
+:nameOfDrinks
+  rdf:type rdf:Property ;
+  rdfs:domain :Drinks ;
+  rdfs:range xsd:string ;
+.
+:nameOfFood
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:string ;
+.
+:nameOfStaff
+  rdf:type rdf:Property ;
+  rdfs:domain :Staff ;
+  rdfs:range xsd:string ;
+.
+:nutritionΙngredients
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:boolean ;
+.
+:nuts
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:boolean ;
+  rdfs:subPropertyOf :allergenicΙngredients ;
+.
+:opensStore
+  rdf:type rdf:Property ;
+  rdfs:domain :StoreManager ;
+  rdfs:range xsd:string ;
+.
+:passesPointsTo
+  rdf:type rdf:Property ;
+  rdfs:domain :Cashier ;
+  rdfs:range :CustomerCard ;
+.
+:payingSalary
+  rdf:type rdf:Property ;
+  rdfs:domain :StoreManager ;
+  rdfs:range :Staff ;
+.
+:person
+  rdf:type rdf:Property ;
+  rdfs:domain :Staff ;
+  rdfs:range xsd:boolean ;
+.
+:phoneNumberOfStaff
+  rdf:type rdf:Property ;
+  rdfs:domain :Staff ;
+  rdfs:range xsd:integer ;
+.
+:pointsOfCard
+  rdf:type rdf:Property ;
+  rdfs:domain :CustomerCard ;
+  rdfs:range xsd:integer ;
+.
+:proteinPerFood
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:decimal ;
+  rdfs:subPropertyOf :nutritionΙngredients ;
+.
+:serving
+  rdf:type rdf:Property ;
+  rdfs:domain :Waiter ;
+  rdfs:range :Customer ;
+  rdfs:subPropertyOf :working ;
+.
+:storedAt
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range :Cupboard ;
+  rdfs:range :Fridge ;
+.
+:sugarPerFood
+  rdf:type rdf:Property ;
+  rdfs:domain :Food ;
+  rdfs:range xsd:decimal ;
+  rdfs:subPropertyOf :nutritionΙngredients ;
+.
+:weight
+  rdf:type rdf:Property ;
+.
+:working
+  rdf:type rdf:Property ;
+  rdfs:domain :Staff ;
+.
+:yoghurtExpiryDate
+  rdf:type rdf:Property ;
+  rdfs:domain :ProteinYogurt ;
+  rdfs:range xsd:date ;
+  rdfs:subPropertyOf :expiryDate ;
+.

@@ -1,0 +1,4071 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.org/Brunch&amp;More"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.org/Brunch&amp;More">
+    <Prefix name="" IRI="http://example.org/Brunch&amp;More#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="spin" IRI="http://spinrdf.org/spin#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="spin:imports"/>
+        <IRI>http://topbraid.org/spin/rdfsplus</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Brunch&amp;More Owl</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>Created with TopBraid Composer</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Baguette"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barista"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cashier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cleaner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdDrinks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdTea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cupboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CustomerCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drinks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fired"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatLamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotDrinks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotTea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ingredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Juices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Menu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalJuice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neighborhood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonVegan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonVeganIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Omelette"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PackagedJuice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pancake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceOfStoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Places"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProteinBar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProteinFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProteinYogurt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PuffPastry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoomTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SavoryPancake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scrambled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Store"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StoreManager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetPancake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeganIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waiter"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#arguedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canReplace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canReplaceAtBar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canReplaceAtServing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cleanedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cleaning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cookedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cooking"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#customerUsesCard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fitsWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fitsWithForVegeterian"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fitsWithNonVegeterian"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#gettingPaid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#greeted"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBranchStoreOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCheaperDrinkThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCheaperFoodThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCheaperThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHealthierThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNearTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#making"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#passedPointsFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#passesPointsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#payingSalary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pays"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#paysWithCreditCard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#servedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#serving"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#similarDrinkTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#similarFoodTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#similarTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#storedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stores"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#working"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#allergenicΙngredients"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#baguetteExpiryDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coffeHasSugar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#costOfDrinks"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#costOfFood"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dailyCustomer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#eggs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fatPerFood"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#female"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gluten"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#grams"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isCertified"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isSkilled"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#male"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#milk"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#milliliters"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#moneyPerHour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameOfDrinks"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameOfFood"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameOfStaff"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nutritionΙngredients"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nuts"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#person"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pointsOfCard"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#proteinPerFood"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sugarPerFood"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#yoghurtExpiryDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bacon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baguette_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baguette_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baguette_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barista_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barista_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barista_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barista_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Boss_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Burger_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Burger_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Burger_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cake_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cake_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cake_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cashier_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cashier_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Church"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cleaner_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cleaner_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ColdCoffe_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ColdCoffe_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ColdCoffee_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ColdTea_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ColdTea_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cook_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cook_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cupboard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CustomerCard_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CustomerCard_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CustomerCard_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CustomerCard_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CustomerCard_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CustomerCard_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CustomerCard_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Egg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fridge_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fridge_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HeatLamp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotCoffee_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotCoffee_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotCoffee_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotTea_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotTea_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Milk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NaturalJuice_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NaturalJuice_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NaturalJuice_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Omelette_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Omelette_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Omelette_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PackagedJuice_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PackagedJuice_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProteinBar_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProteinBar_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProteinYogurt_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProteinYogurt_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProteinYogurt_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PuffPastry_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PuffPastry_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SavoryPancake_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SavoryPancake_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SavoryPancake_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ScrambledOmelette"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Seed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StoreManager_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StoreManager_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Store_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Store_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Store_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Store_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SweetPancake_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SweetPancake_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SweetPancake_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Waiter_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Waiter_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Waiter_3"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="spin:imports"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Cold"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#storedAt"/>
+            <Class IRI="#Fridge"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ColdDrinks"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ColdCoffee"/>
+            <Class IRI="#ColdTea"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Fired"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#arguedWith"/>
+            <Class IRI="#Boss"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#storedAt"/>
+            <Class IRI="#HeatLamp"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HotDrinks"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#HotCoffee"/>
+            <Class IRI="#HotTea"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Neighborhood"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isNearTo"/>
+            <Class IRI="#Places"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NonVegan"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#NonVeganIngredient"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RoomTemperature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#storedAt"/>
+            <Class IRI="#Cupboard"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Staff"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#worksTo"/>
+            <Class IRI="#Store"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vegan"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#VeganIngredient"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Baguette"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Barista"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boss"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burger"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cake"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cashier"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cleaner"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coffee"/>
+        <Class IRI="#Drinks"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cold"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdCoffee"/>
+        <Class IRI="#Coffee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdDrinks"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdTea"/>
+        <Class IRI="#Tea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cook"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cupboard"/>
+        <Class IRI="#PlaceOfStoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Customer"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Customer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#customerUsesCard"/>
+            <Class IRI="#CustomerCard"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CustomerCard"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drinks"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fired"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fridge"/>
+        <Class IRI="#PlaceOfStoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatLamp"/>
+        <Class IRI="#PlaceOfStoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hot"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotCoffee"/>
+        <Class IRI="#Coffee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotDrinks"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotTea"/>
+        <Class IRI="#Tea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Juices"/>
+        <Class IRI="#Drinks"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Menu"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalJuice"/>
+        <Class IRI="#Juices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neighborhood"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonVegan"/>
+        <Class IRI="#Menu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonVeganIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Omelette"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PackagedJuice"/>
+        <Class IRI="#Juices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pancake"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfStoring"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Places"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProteinBar"/>
+        <Class IRI="#ProteinFood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProteinFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProteinYogurt"/>
+        <Class IRI="#ProteinFood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PuffPastry"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoomTemperature"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SavoryPancake"/>
+        <Class IRI="#Pancake"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scrambled"/>
+        <Class IRI="#Omelette"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staff"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Store"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StoreManager"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetPancake"/>
+        <Class IRI="#Pancake"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tea"/>
+        <Class IRI="#Drinks"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temperature"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegan"/>
+        <Class IRI="#Menu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeganIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waiter"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Barista"/>
+        <Class IRI="#Cashier"/>
+        <Class IRI="#Cleaner"/>
+        <Class IRI="#Cook"/>
+        <Class IRI="#StoreManager"/>
+        <Class IRI="#Waiter"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cold"/>
+        <Class IRI="#Hot"/>
+        <Class IRI="#RoomTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ColdCoffee"/>
+        <Class IRI="#HotCoffee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ColdTea"/>
+        <Class IRI="#HotTea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NaturalJuice"/>
+        <Class IRI="#PackagedJuice"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NonVegan"/>
+        <Class IRI="#Vegan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NonVeganIngredient"/>
+        <Class IRI="#VeganIngredient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SavoryPancake"/>
+        <Class IRI="#SweetPancake"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#NonVeganIngredient"/>
+        <NamedIndividual IRI="#Bacon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Baguette"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Baguette"/>
+        <NamedIndividual IRI="#Baguette_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Baguette"/>
+        <NamedIndividual IRI="#Baguette_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Barista"/>
+        <NamedIndividual IRI="#Barista_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Barista"/>
+        <NamedIndividual IRI="#Barista_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Barista"/>
+        <NamedIndividual IRI="#Barista_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Barista"/>
+        <NamedIndividual IRI="#Barista_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boss"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Burger"/>
+        <NamedIndividual IRI="#Burger_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Burger"/>
+        <NamedIndividual IRI="#Burger_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Burger"/>
+        <NamedIndividual IRI="#Burger_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cake"/>
+        <NamedIndividual IRI="#Cake_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cake"/>
+        <NamedIndividual IRI="#Cake_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cake"/>
+        <NamedIndividual IRI="#Cake_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cashier"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cashier"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Places"/>
+        <NamedIndividual IRI="#Church"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cleaner"/>
+        <NamedIndividual IRI="#Cleaner_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cleaner"/>
+        <NamedIndividual IRI="#Cleaner_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ColdCoffee"/>
+        <NamedIndividual IRI="#ColdCoffe_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ColdCoffee"/>
+        <NamedIndividual IRI="#ColdCoffe_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ColdCoffee"/>
+        <NamedIndividual IRI="#ColdCoffee_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ColdTea"/>
+        <NamedIndividual IRI="#ColdTea_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ColdTea"/>
+        <NamedIndividual IRI="#ColdTea_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cook"/>
+        <NamedIndividual IRI="#Cook_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cook"/>
+        <NamedIndividual IRI="#Cook_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cupboard"/>
+        <NamedIndividual IRI="#Cupboard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CustomerCard"/>
+        <NamedIndividual IRI="#CustomerCard_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CustomerCard"/>
+        <NamedIndividual IRI="#CustomerCard_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CustomerCard"/>
+        <NamedIndividual IRI="#CustomerCard_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CustomerCard"/>
+        <NamedIndividual IRI="#CustomerCard_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CustomerCard"/>
+        <NamedIndividual IRI="#CustomerCard_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CustomerCard"/>
+        <NamedIndividual IRI="#CustomerCard_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CustomerCard"/>
+        <NamedIndividual IRI="#CustomerCard_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NonVeganIngredient"/>
+        <NamedIndividual IRI="#Egg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fridge"/>
+        <NamedIndividual IRI="#Fridge_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fridge"/>
+        <NamedIndividual IRI="#Fridge_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatLamp"/>
+        <NamedIndividual IRI="#HeatLamp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotCoffee"/>
+        <NamedIndividual IRI="#HotCoffee_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotCoffee"/>
+        <NamedIndividual IRI="#HotCoffee_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotCoffee"/>
+        <NamedIndividual IRI="#HotCoffee_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotTea"/>
+        <NamedIndividual IRI="#HotTea_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotTea"/>
+        <NamedIndividual IRI="#HotTea_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NonVeganIngredient"/>
+        <NamedIndividual IRI="#Milk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalJuice"/>
+        <NamedIndividual IRI="#NaturalJuice_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalJuice"/>
+        <NamedIndividual IRI="#NaturalJuice_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalJuice"/>
+        <NamedIndividual IRI="#NaturalJuice_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VeganIngredient"/>
+        <NamedIndividual IRI="#Nut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Omelette"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Omelette"/>
+        <NamedIndividual IRI="#Omelette_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Omelette"/>
+        <NamedIndividual IRI="#Omelette_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PackagedJuice"/>
+        <NamedIndividual IRI="#PackagedJuice_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PackagedJuice"/>
+        <NamedIndividual IRI="#PackagedJuice_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Places"/>
+        <NamedIndividual IRI="#Parking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProteinBar"/>
+        <NamedIndividual IRI="#ProteinBar_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProteinBar"/>
+        <NamedIndividual IRI="#ProteinBar_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProteinYogurt"/>
+        <NamedIndividual IRI="#ProteinYogurt_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProteinYogurt"/>
+        <NamedIndividual IRI="#ProteinYogurt_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProteinYogurt"/>
+        <NamedIndividual IRI="#ProteinYogurt_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PuffPastry"/>
+        <NamedIndividual IRI="#PuffPastry_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PuffPastry"/>
+        <NamedIndividual IRI="#PuffPastry_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SavoryPancake"/>
+        <NamedIndividual IRI="#SavoryPancake_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SavoryPancake"/>
+        <NamedIndividual IRI="#SavoryPancake_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SavoryPancake"/>
+        <NamedIndividual IRI="#SavoryPancake_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Scrambled"/>
+        <NamedIndividual IRI="#ScrambledOmelette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VeganIngredient"/>
+        <NamedIndividual IRI="#Seed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VeganIngredient"/>
+        <NamedIndividual IRI="#Soy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StoreManager"/>
+        <NamedIndividual IRI="#StoreManager_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StoreManager"/>
+        <NamedIndividual IRI="#StoreManager_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#Store_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#Store_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#Store_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#Store_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SweetPancake"/>
+        <NamedIndividual IRI="#SweetPancake_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SweetPancake"/>
+        <NamedIndividual IRI="#SweetPancake_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SweetPancake"/>
+        <NamedIndividual IRI="#SweetPancake_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Waiter"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Waiter"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Waiter"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <NamedIndividual IRI="#Fridge_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Baguette_2"/>
+        <NamedIndividual IRI="#Fridge_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Baguette_3"/>
+        <NamedIndividual IRI="#Fridge_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#canReplaceAtBar"/>
+        <NamedIndividual IRI="#Barista_1"/>
+        <NamedIndividual IRI="#Barista_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_1"/>
+        <NamedIndividual IRI="#ColdCoffe_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_1"/>
+        <NamedIndividual IRI="#ColdTea_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_1"/>
+        <NamedIndividual IRI="#NaturalJuice_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Barista_1"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#canReplaceAtBar"/>
+        <NamedIndividual IRI="#Barista_2"/>
+        <NamedIndividual IRI="#Barista_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_2"/>
+        <NamedIndividual IRI="#HotCoffee_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_2"/>
+        <NamedIndividual IRI="#NaturalJuice_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_2"/>
+        <NamedIndividual IRI="#PackagedJuice_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Barista_2"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#canReplaceAtBar"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <NamedIndividual IRI="#Barista_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <NamedIndividual IRI="#ColdCoffee_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <NamedIndividual IRI="#ColdTea_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <NamedIndividual IRI="#HotCoffee_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <NamedIndividual IRI="#HotTea_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <NamedIndividual IRI="#PackagedJuice_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_4"/>
+        <NamedIndividual IRI="#ColdCoffe_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_4"/>
+        <NamedIndividual IRI="#HotCoffee_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_4"/>
+        <NamedIndividual IRI="#HotTea_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#making"/>
+        <NamedIndividual IRI="#Barista_4"/>
+        <NamedIndividual IRI="#NaturalJuice_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Barista_4"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#arguedWith"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Barista_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#arguedWith"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Barista_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#arguedWith"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#arguedWith"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Cleaner_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#arguedWith"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Barista_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Barista_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Barista_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Barista_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Cleaner_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Cleaner_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Cook_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Cook_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#StoreManager_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#StoreManager_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#payingSalary"/>
+        <NamedIndividual IRI="#Boss_1"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Burger_1"/>
+        <NamedIndividual IRI="#ColdTea_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Burger_1"/>
+        <NamedIndividual IRI="#ColdTea_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#Burger_1"/>
+        <NamedIndividual IRI="#Bacon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#Burger_1"/>
+        <NamedIndividual IRI="#Egg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#Burger_1"/>
+        <NamedIndividual IRI="#Milk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Burger_1"/>
+        <NamedIndividual IRI="#Fridge_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Burger_2"/>
+        <NamedIndividual IRI="#PackagedJuice_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Burger_2"/>
+        <NamedIndividual IRI="#PackagedJuice_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Burger_2"/>
+        <NamedIndividual IRI="#Fridge_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Burger_3"/>
+        <NamedIndividual IRI="#Fridge_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Cake_1"/>
+        <NamedIndividual IRI="#ColdCoffe_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Cake_1"/>
+        <NamedIndividual IRI="#ColdCoffe_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Cake_1"/>
+        <NamedIndividual IRI="#ColdTea_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Cake_1"/>
+        <NamedIndividual IRI="#HotTea_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Cake_1"/>
+        <NamedIndividual IRI="#PackagedJuice_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#similarTo"/>
+        <NamedIndividual IRI="#Cake_1"/>
+        <NamedIndividual IRI="#Cake_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Cake_1"/>
+        <NamedIndividual IRI="#Fridge_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Cake_2"/>
+        <NamedIndividual IRI="#ColdTea_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Cake_2"/>
+        <NamedIndividual IRI="#HotCoffee_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Cake_2"/>
+        <NamedIndividual IRI="#HotTea_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Cake_2"/>
+        <NamedIndividual IRI="#Fridge_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#similarTo"/>
+        <NamedIndividual IRI="#Cake_3"/>
+        <NamedIndividual IRI="#Cake_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Cake_3"/>
+        <NamedIndividual IRI="#Fridge_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gettingPaid"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+        <NamedIndividual IRI="#Customer_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gettingPaid"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+        <NamedIndividual IRI="#Customer_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gettingPaid"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+        <NamedIndividual IRI="#Customer_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passesPointsTo"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+        <NamedIndividual IRI="#CustomerCard_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passesPointsTo"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+        <NamedIndividual IRI="#CustomerCard_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passesPointsTo"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+        <NamedIndividual IRI="#CustomerCard_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gettingPaid"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <NamedIndividual IRI="#Customer_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gettingPaid"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <NamedIndividual IRI="#Customer_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gettingPaid"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <NamedIndividual IRI="#Customer_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passesPointsTo"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <NamedIndividual IRI="#CustomerCard_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passesPointsTo"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <NamedIndividual IRI="#CustomerCard_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passesPointsTo"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <NamedIndividual IRI="#CustomerCard_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isNearTo"/>
+        <NamedIndividual IRI="#Church"/>
+        <NamedIndividual IRI="#Parking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cleaning"/>
+        <NamedIndividual IRI="#Cleaner_1"/>
+        <NamedIndividual IRI="#Store_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Cleaner_1"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cleaning"/>
+        <NamedIndividual IRI="#Cleaner_2"/>
+        <NamedIndividual IRI="#Store_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Cleaner_2"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_1"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_1"/>
+        <NamedIndividual IRI="#Burger_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_1"/>
+        <NamedIndividual IRI="#Cake_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_1"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Cook_1"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#Baguette_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#Burger_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#Burger_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#Cake_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#Cake_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#Omelette_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#ProteinYogurt_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#ProteinYogurt_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#PuffPastry_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#SavoryPancake_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#SavoryPancake_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#SweetPancake_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passedPointsFrom"/>
+        <NamedIndividual IRI="#CustomerCard_1"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passedPointsFrom"/>
+        <NamedIndividual IRI="#CustomerCard_2"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passedPointsFrom"/>
+        <NamedIndividual IRI="#CustomerCard_3"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passedPointsFrom"/>
+        <NamedIndividual IRI="#CustomerCard_4"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passedPointsFrom"/>
+        <NamedIndividual IRI="#CustomerCard_5"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passedPointsFrom"/>
+        <NamedIndividual IRI="#CustomerCard_6"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#customerUsesCard"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <NamedIndividual IRI="#CustomerCard_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#customerUsesCard"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <NamedIndividual IRI="#CustomerCard_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#customerUsesCard"/>
+        <NamedIndividual IRI="#Customer_3"/>
+        <NamedIndividual IRI="#CustomerCard_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#customerUsesCard"/>
+        <NamedIndividual IRI="#Customer_4"/>
+        <NamedIndividual IRI="#CustomerCard_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#customerUsesCard"/>
+        <NamedIndividual IRI="#Customer_5"/>
+        <NamedIndividual IRI="#CustomerCard_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#customerUsesCard"/>
+        <NamedIndividual IRI="#Customer_6"/>
+        <NamedIndividual IRI="#CustomerCard_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#customerUsesCard"/>
+        <NamedIndividual IRI="#Customer_7"/>
+        <NamedIndividual IRI="#CustomerCard_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCheaperDrinkThan"/>
+        <NamedIndividual IRI="#HotCoffee_2"/>
+        <NamedIndividual IRI="#ColdCoffe_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCheaperDrinkThan"/>
+        <NamedIndividual IRI="#HotTea_1"/>
+        <NamedIndividual IRI="#ColdCoffee_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCheaperDrinkThan"/>
+        <NamedIndividual IRI="#HotTea_1"/>
+        <NamedIndividual IRI="#NaturalJuice_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCheaperDrinkThan"/>
+        <NamedIndividual IRI="#NaturalJuice_3"/>
+        <NamedIndividual IRI="#HotCoffee_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+        <NamedIndividual IRI="#NaturalJuice_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+        <NamedIndividual IRI="#NaturalJuice_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCheaperFoodThan"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+        <NamedIndividual IRI="#Burger_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHealthierThan"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+        <NamedIndividual IRI="#SweetPancake_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+        <NamedIndividual IRI="#HeatLamp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Omelette_2"/>
+        <NamedIndividual IRI="#HeatLamp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#Omelette_3"/>
+        <NamedIndividual IRI="#HeatLamp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCheaperDrinkThan"/>
+        <NamedIndividual IRI="#PackagedJuice_1"/>
+        <NamedIndividual IRI="#HotTea_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#PackagedJuice_1"/>
+        <NamedIndividual IRI="#Fridge_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#PackagedJuice_2"/>
+        <NamedIndividual IRI="#Fridge_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHealthierThan"/>
+        <NamedIndividual IRI="#ProteinBar_1"/>
+        <NamedIndividual IRI="#ProteinYogurt_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#ProteinBar_1"/>
+        <NamedIndividual IRI="#Cupboard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#ProteinBar_2"/>
+        <NamedIndividual IRI="#Cupboard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#ProteinYogurt_1"/>
+        <NamedIndividual IRI="#Fridge_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHealthierThan"/>
+        <NamedIndividual IRI="#ProteinYogurt_2"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#ProteinYogurt_2"/>
+        <NamedIndividual IRI="#Fridge_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storedAt"/>
+        <NamedIndividual IRI="#ProteinYogurt_3"/>
+        <NamedIndividual IRI="#Fridge_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCheaperFoodThan"/>
+        <NamedIndividual IRI="#PuffPastry_1"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#SavoryPancake_1"/>
+        <NamedIndividual IRI="#ColdTea_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#SavoryPancake_1"/>
+        <NamedIndividual IRI="#Soy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCheaperFoodThan"/>
+        <NamedIndividual IRI="#SavoryPancake_1"/>
+        <NamedIndividual IRI="#PuffPastry_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#SavoryPancake_2"/>
+        <NamedIndividual IRI="#ColdTea_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#StoreManager_1"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#StoreManager_2"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isNearTo"/>
+        <NamedIndividual IRI="#Store_1"/>
+        <NamedIndividual IRI="#Church"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBranchStoreOf"/>
+        <NamedIndividual IRI="#Store_2"/>
+        <NamedIndividual IRI="#Store_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBranchStoreOf"/>
+        <NamedIndividual IRI="#Store_3"/>
+        <NamedIndividual IRI="#Store_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBranchStoreOf"/>
+        <NamedIndividual IRI="#Store_4"/>
+        <NamedIndividual IRI="#Store_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fitsWith"/>
+        <NamedIndividual IRI="#SweetPancake_1"/>
+        <NamedIndividual IRI="#ColdCoffe_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHealthierThan"/>
+        <NamedIndividual IRI="#SweetPancake_1"/>
+        <NamedIndividual IRI="#Burger_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHealthierThan"/>
+        <NamedIndividual IRI="#SweetPancake_1"/>
+        <NamedIndividual IRI="#SavoryPancake_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#canReplaceAtServing"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#greeted"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <NamedIndividual IRI="#Customer_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#greeted"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <NamedIndividual IRI="#Customer_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serving"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <NamedIndividual IRI="#Customer_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serving"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <NamedIndividual IRI="#Customer_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#canReplaceAtServing"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#greeted"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+        <NamedIndividual IRI="#Customer_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#greeted"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+        <NamedIndividual IRI="#Customer_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serving"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+        <NamedIndividual IRI="#Customer_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serving"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+        <NamedIndividual IRI="#Customer_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#greeted"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+        <NamedIndividual IRI="#Customer_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#greeted"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+        <NamedIndividual IRI="#Customer_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+        <NamedIndividual IRI="#Boss_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serving"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+        <NamedIndividual IRI="#Customer_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serving"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+        <NamedIndividual IRI="#Customer_6"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#allergenicΙngredients"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baguetteExpiryDate"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2022-12-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eggs"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fatPerFood"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">51.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gluten"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milk"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nutritionΙngredients"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nuts"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Baguette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Baguette_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Baguette_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">550</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Baguette_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Baguette_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Baguette_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">560</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Baguette_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Barista_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Barista_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Barista_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Barista_1"/>
+        <Literal>Nikos Galanis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Barista_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65956965</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Barista_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Barista_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Barista_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Barista_2"/>
+        <Literal>Maria Magdalini</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Barista_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55654566</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <Literal>NIkos Nikou</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Barista_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5488484</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Barista_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Barista_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Barista_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Barista_4"/>
+        <Literal>Fotis Fotiou</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Barista_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5454546</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Burger_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Burger_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Burger_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Burger_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Burger_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Burger_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Burger_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Burger_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Burger_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Cake_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Cake_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Cake_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Cake_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Cake_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">390</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Cake_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Cake_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Cake_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">420</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Cake_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Cashier_1"/>
+        <Literal>Giwrgos Katsouranis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <Literal>Georgia Georgiou</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Cashier_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5461513</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Cleaner_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Cleaner_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Cleaner_1"/>
+        <Literal>Dimitris Koutsoulis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Cleaner_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5416156</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Cleaner_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Cleaner_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Cleaner_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Cleaner_2"/>
+        <Literal>Ioanna Ioannou</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Cleaner_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6456544</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coffeHasSugar"/>
+        <NamedIndividual IRI="#ColdCoffe_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#ColdCoffe_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#ColdCoffe_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#ColdCoffe_1"/>
+        <Literal>FredoCapucino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coffeHasSugar"/>
+        <NamedIndividual IRI="#ColdCoffe_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#ColdCoffe_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#ColdCoffe_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#ColdCoffe_2"/>
+        <Literal>FredoEspresso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coffeHasSugar"/>
+        <NamedIndividual IRI="#ColdCoffee_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#ColdCoffee_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#ColdCoffee_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#ColdCoffee_3"/>
+        <Literal>Frappe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#ColdTea_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#ColdTea_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">320</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#ColdTea_1"/>
+        <Literal>Lemon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#ColdTea_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#ColdTea_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">280</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#ColdTea_2"/>
+        <Literal>Peach</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Cook_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Cook_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Cook_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Cook_1"/>
+        <Literal>Giannis Giannou</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Cook_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">548168118</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <Literal>Antreas Gioulis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Cook_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65451681</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pointsOfCard"/>
+        <NamedIndividual IRI="#CustomerCard_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">235</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pointsOfCard"/>
+        <NamedIndividual IRI="#CustomerCard_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">125</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pointsOfCard"/>
+        <NamedIndividual IRI="#CustomerCard_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">146</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pointsOfCard"/>
+        <NamedIndividual IRI="#CustomerCard_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">357</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pointsOfCard"/>
+        <NamedIndividual IRI="#CustomerCard_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">670</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pointsOfCard"/>
+        <NamedIndividual IRI="#CustomerCard_6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dailyCustomer"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dailyCustomer"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dailyCustomer"/>
+        <NamedIndividual IRI="#Customer_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dailyCustomer"/>
+        <NamedIndividual IRI="#Customer_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dailyCustomer"/>
+        <NamedIndividual IRI="#Customer_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dailyCustomer"/>
+        <NamedIndividual IRI="#Customer_6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coffeHasSugar"/>
+        <NamedIndividual IRI="#HotCoffee_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#HotCoffee_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#HotCoffee_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#HotCoffee_1"/>
+        <Literal>Capucino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coffeHasSugar"/>
+        <NamedIndividual IRI="#HotCoffee_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#HotCoffee_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#HotCoffee_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#HotCoffee_2"/>
+        <Literal>Espresso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coffeHasSugar"/>
+        <NamedIndividual IRI="#HotCoffee_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#HotCoffee_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#HotCoffee_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#HotCoffee_3"/>
+        <Literal>FilterCoffee</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#HotTea_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#HotTea_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#HotTea_1"/>
+        <Literal>Black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#HotTea_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#HotTea_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#HotTea_2"/>
+        <Literal>Indian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#NaturalJuice_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#NaturalJuice_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#NaturalJuice_1"/>
+        <Literal>Orange</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#NaturalJuice_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#NaturalJuice_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#NaturalJuice_2"/>
+        <Literal>Strawberry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#NaturalJuice_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#NaturalJuice_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#NaturalJuice_3"/>
+        <Literal>Pineapple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">360</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Omelette_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Omelette_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Omelette_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Omelette_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#Omelette_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#Omelette_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">480</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#Omelette_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#PackagedJuice_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#PackagedJuice_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#PackagedJuice_1"/>
+        <Literal>Carrot</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfDrinks"/>
+        <NamedIndividual IRI="#PackagedJuice_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#milliliters"/>
+        <NamedIndividual IRI="#PackagedJuice_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <NamedIndividual IRI="#PackagedJuice_2"/>
+        <Literal>Orange</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#ProteinBar_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#ProteinBar_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#ProteinBar_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#ProteinBar_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#ProteinBar_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#ProteinBar_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#ProteinYogurt_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#ProteinYogurt_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">280</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#ProteinYogurt_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yoghurtExpiryDate"/>
+        <NamedIndividual IRI="#ProteinYogurt_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2022-12-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#ProteinYogurt_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#ProteinYogurt_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">240</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#ProteinYogurt_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yoghurtExpiryDate"/>
+        <NamedIndividual IRI="#ProteinYogurt_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2022-12-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#ProteinYogurt_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#ProteinYogurt_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#ProteinYogurt_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">13.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yoghurtExpiryDate"/>
+        <NamedIndividual IRI="#ProteinYogurt_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2022-12-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#PuffPastry_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#PuffPastry_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">330</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#PuffPastry_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#PuffPastry_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#PuffPastry_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">360</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#PuffPastry_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#SavoryPancake_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#SavoryPancake_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#SavoryPancake_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#SavoryPancake_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#SavoryPancake_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#SavoryPancake_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#SavoryPancake_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#SavoryPancake_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">460</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#SavoryPancake_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#StoreManager_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#StoreManager_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#StoreManager_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#StoreManager_1"/>
+        <Literal>Mixalis Zanis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#StoreManager_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6545681681</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#StoreManager_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#StoreManager_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#StoreManager_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#StoreManager_2"/>
+        <Literal>lll</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#StoreManager_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">51168181</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#SweetPancake_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#SweetPancake_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#SweetPancake_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#SweetPancake_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#SweetPancake_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">560</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#SweetPancake_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costOfFood"/>
+        <NamedIndividual IRI="#SweetPancake_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grams"/>
+        <NamedIndividual IRI="#SweetPancake_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">560</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinPerFood"/>
+        <NamedIndividual IRI="#SweetPancake_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#female"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#male"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <Literal>Tasos Ksiarxos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Waiter_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1681681</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+        <Literal>Nikos Nik</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Waiter_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">668161</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isCertified"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moneyPerHour"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameOfStaff"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+        <Literal>Giouli Peti</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <NamedIndividual IRI="#Waiter_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">654681</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canReplaceAtBar"/>
+        <ObjectProperty IRI="#canReplace"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canReplaceAtServing"/>
+        <ObjectProperty IRI="#canReplace"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cleanedBy"/>
+        <ObjectProperty IRI="#working"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cleaning"/>
+        <ObjectProperty IRI="#working"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cookedBy"/>
+        <ObjectProperty IRI="#working"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cooking"/>
+        <ObjectProperty IRI="#working"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#fitsWithForVegeterian"/>
+        <ObjectProperty IRI="#fitsWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#fitsWithNonVegeterian"/>
+        <ObjectProperty IRI="#fitsWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#gettingPaid"/>
+        <ObjectProperty IRI="#working"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCheaperDrinkThan"/>
+        <ObjectProperty IRI="#isCheaperThan"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCheaperFoodThan"/>
+        <ObjectProperty IRI="#isCheaperThan"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#makedBy"/>
+        <ObjectProperty IRI="#working"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#making"/>
+        <ObjectProperty IRI="#working"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#pays"/>
+        <ObjectProperty IRI="#working"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#paysWithCreditCard"/>
+        <ObjectProperty IRI="#pays"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#servedBy"/>
+        <ObjectProperty IRI="#working"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#serving"/>
+        <ObjectProperty IRI="#working"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#similarDrinkTo"/>
+        <ObjectProperty IRI="#similarTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#similarFoodTo"/>
+        <ObjectProperty IRI="#similarTo"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#cleanedBy"/>
+        <ObjectProperty IRI="#cleaning"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#cookedBy"/>
+        <ObjectProperty IRI="#cooking"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#customerUsesCard"/>
+        <ObjectProperty IRI="#usedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#gettingPaid"/>
+        <ObjectProperty IRI="#pays"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#makedBy"/>
+        <ObjectProperty IRI="#making"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <ObjectProperty IRI="#payingSalary"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#passedPointsFrom"/>
+        <ObjectProperty IRI="#passesPointsTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#servedBy"/>
+        <ObjectProperty IRI="#serving"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#storedAt"/>
+        <ObjectProperty IRI="#stores"/>
+    </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#customerUsesCard"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#payingSalary"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#arguedWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#fitsWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#fitsWithForVegeterian"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#fitsWithNonVegeterian"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#greeted"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#similarDrinkTo"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#similarFoodTo"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#similarTo"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#canReplace"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#canReplaceAtBar"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#canReplaceAtServing"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isBranchStoreOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isCheaperDrinkThan"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isCheaperFoodThan"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isCheaperThan"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isHealthierThan"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isNearTo"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#arguedWith"/>
+        <Class IRI="#Boss"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canReplaceAtBar"/>
+        <Class IRI="#Barista"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canReplaceAtServing"/>
+        <Class IRI="#Waiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cleanedBy"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cleaning"/>
+        <Class IRI="#Cleaner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cookedBy"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cooking"/>
+        <Class IRI="#Cook"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#customerUsesCard"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fitsWith"/>
+        <Class IRI="#Drinks"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fitsWithForVegeterian"/>
+        <Class IRI="#Drinks"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fitsWithNonVegeterian"/>
+        <Class IRI="#Drinks"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#gettingPaid"/>
+        <Class IRI="#Cashier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#greeted"/>
+        <Class IRI="#Waiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBranchStoreOf"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCheaperDrinkThan"/>
+        <Class IRI="#Drinks"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCheaperFoodThan"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHealthierThan"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isNearTo"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#makedBy"/>
+        <Class IRI="#Drinks"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#making"/>
+        <Class IRI="#Barista"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#passedPointsFrom"/>
+        <Class IRI="#CustomerCard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#passesPointsTo"/>
+        <Class IRI="#Cashier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#payingSalary"/>
+        <Class IRI="#Boss"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pays"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#paysWithCreditCard"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#servedBy"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#serving"/>
+        <Class IRI="#Waiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#similarDrinkTo"/>
+        <Class IRI="#Drinks"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#similarFoodTo"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#storedAt"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stores"/>
+        <Class IRI="#PlaceOfStoring"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedBy"/>
+        <Class IRI="#CustomerCard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#working"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksTo"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#arguedWith"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canReplaceAtBar"/>
+        <Class IRI="#Barista"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canReplaceAtServing"/>
+        <Class IRI="#Waiter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cleanedBy"/>
+        <Class IRI="#Cleaner"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cleaning"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cookedBy"/>
+        <Class IRI="#Cook"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cooking"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#customerUsesCard"/>
+        <Class IRI="#CustomerCard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fitsWith"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fitsWithForVegeterian"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fitsWithNonVegeterian"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#gettingPaid"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#greeted"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBranchStoreOf"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCheaperDrinkThan"/>
+        <Class IRI="#Drinks"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCheaperFoodThan"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHealthierThan"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isNearTo"/>
+        <Class IRI="#Places"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#makedBy"/>
+        <Class IRI="#Barista"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#making"/>
+        <Class IRI="#Drinks"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#paidSalaryFrom"/>
+        <Class IRI="#Boss"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#passedPointsFrom"/>
+        <Class IRI="#Cashier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#passesPointsTo"/>
+        <Class IRI="#CustomerCard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#payingSalary"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pays"/>
+        <Class IRI="#Cashier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#servedBy"/>
+        <Class IRI="#Waiter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#serving"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#similarDrinkTo"/>
+        <Class IRI="#Drinks"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#similarFoodTo"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stores"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedBy"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#working"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#eggs"/>
+        <DataProperty IRI="#allergenicΙngredients"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fatPerFood"/>
+        <DataProperty IRI="#nutritionΙngredients"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#female"/>
+        <DataProperty IRI="#person"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#gluten"/>
+        <DataProperty IRI="#allergenicΙngredients"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#grams"/>
+        <DataProperty IRI="#weight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#male"/>
+        <DataProperty IRI="#person"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#milk"/>
+        <DataProperty IRI="#allergenicΙngredients"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#milliliters"/>
+        <DataProperty IRI="#weight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nuts"/>
+        <DataProperty IRI="#allergenicΙngredients"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#proteinPerFood"/>
+        <DataProperty IRI="#nutritionΙngredients"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sugarPerFood"/>
+        <DataProperty IRI="#nutritionΙngredients"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#baguetteExpiryDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#eggs"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#fatPerFood"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#female"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#gluten"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#male"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#milk"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#nameOfStaff"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#nuts"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#proteinPerFood"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sugarPerFood"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#allergenicΙngredients"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baguetteExpiryDate"/>
+        <Class IRI="#Baguette"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#coffeHasSugar"/>
+        <Class IRI="#Coffee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#costOfDrinks"/>
+        <Class IRI="#Drinks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#costOfFood"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dailyCustomer"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#eggs"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fatPerFood"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#female"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gluten"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#grams"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isCertified"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isSkilled"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#male"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#milk"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#milliliters"/>
+        <Class IRI="#Drinks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#moneyPerHour"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <Class IRI="#Drinks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameOfFood"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameOfStaff"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nutritionΙngredients"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nuts"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#person"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pointsOfCard"/>
+        <Class IRI="#CustomerCard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#proteinPerFood"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sugarPerFood"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weight"/>
+        <Class IRI="#Drinks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weight"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#yoghurtExpiryDate"/>
+        <Class IRI="#ProteinYogurt"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#allergenicΙngredients"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#baguetteExpiryDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#coffeHasSugar"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#costOfDrinks"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#costOfFood"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dailyCustomer"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#eggs"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fatPerFood"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#female"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gluten"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#grams"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hoursWorkedThisWeek"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isCertified"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isSkilled"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#male"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#milk"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#milliliters"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#moneyPerHour"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameOfDrinks"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameOfFood"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameOfStaff"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nuts"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#person"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#phoneNumberOfStaff"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pointsOfCard"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#proteinPerFood"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sugarPerFood"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weight"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#yoghurtExpiryDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
